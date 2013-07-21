@@ -1,11 +1,11 @@
 {
-  "name": "custom-html-file-input",
+  "name": "custom-file-input",
   "version": "0.9",
-  "description": "CustomInput",
+  "description": "Custome HTML File Input",
   "keywords": [
     "jquery-plugin"
   ],
-  "homepage": "https://github.com/kvt/custom-html-file-input",
+  "homepage": "https://github.com/kvt/custom-file-input",
   "author": {
     "name": "Ketan Tada",
     "email": "ketantada@gmail.com",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kvt/custom-html-file-input.git"
+    "url": "https://github.com/kvt/custom-file-input.git"
   },
   "licenses": [
     {
