@@ -1,4 +1,4 @@
-# CustomInput
+# Custom HTML File Input
 
 The best jQuery plugin ever.
 
@@ -16,7 +16,7 @@ In your web page:
 <script src="dist/custom-html-file-input.min.js"></script>
 <script>
 jQuery(function($) {
-  $.awesome(); // "awesome"
+  $.customHtmlFileInput(); // "awesome"
 });
 </script>
 ```

@@ -3,17 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>jQuery Custom File Input Plugin</title>
+<style>
+	
+	input, button {
+		background-color: #ffffff;
+		border: 1px solid #cccccc;
+		height: 28px;
+	}
+	body {
+		margin: 30px;
+	}
+</style>
 </head>
 <body>
 	<div>
 	<input  type="file" class="file">
-	<input  type="file" class="file1">
+	<br />
+	<br />
+	<input  type="file" class="file">
 	</div>
 
 	<script src="../bower_components/jquery/jquery.js"></script>
 	<script src="../src/custom-html-file-input.js"></script>
 	<script>
-		$('.file').awesome();
+		$('.file').customHtmlFileInput({
+			inputClass: 'span2',
+			buttonClass: 'btn'
+		});
 	</script>
 </body>
 </html>
