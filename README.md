@@ -6,8 +6,8 @@ The best jQuery plugin ever.
 
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/kvt/jquery-custom-html-file-input/master/dist/jquery.custom-html-file-input.min.js
-[max]: https://raw.github.com/kvt/jquery-custom-html-file-input/master/dist/jquery.custom-html-file-input.js
+[min]: https://raw.github.com/kvt/custom-file-input/master/dist/jquery.custom-html-file-input.min.js
+[max]: https://raw.github.com/kvt/custom-file-input/master/dist/jquery.custom-html-file-input.js
 
 In your web page:
 
