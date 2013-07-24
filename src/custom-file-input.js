@@ -1,4 +1,4 @@
-/*! custom-html-file-input - v0.9 - 2013-07-21
+/*! custom-html-file-input - v1.0.0 - 2013-07-21
 * https://github.com/kvt/custom-html-file-input
 * Copyright (c) 2013 Ketan Tada; Licensed MIT */
 (function ($) {

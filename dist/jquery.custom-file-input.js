@@ -1,7 +1,7 @@
-/*! custom-file-input - v0.9 - 2013-07-21
+/*! custom-file-input - v1.0.0 - 2013-07-25
 * https://github.com/kvt/custom-file-input
 * Copyright (c) 2013 Ketan Tada; Licensed MIT */
-/*! custom-html-file-input - v0.9 - 2013-07-21
+/*! custom-html-file-input - v1.0.0 - 2013-07-21
 * https://github.com/kvt/custom-html-file-input
 * Copyright (c) 2013 Ketan Tada; Licensed MIT */
 (function ($) {
@@ -15,6 +15,7 @@
       buttonText: 'Browse',
       inputClass: 'customFileInput-textbox',
       buttonClass: 'customFileInput-button',
+      buttonDirection: 'right',
       fileInputAttrs: {
         opacity: 0,
         height: "100px",
@@ -30,26 +31,34 @@
       }
     }, options);
 
-
     return this.each(function () {
-      var that = this;
-      $(this).css(defaults.fileInputAttrs)
+      var $self = $(this);
+      var $input  = $('<input type="text" />').attr(defaults.textBoxAttrs).addClass(defaults.inputClass);
+      var $button = $('<button />').attr(defaults.buttonAttrs).addClass(defaults.buttonClass).html(defaults.buttonText);
+
+      $self.css(defaults.fileInputAttrs)
       .attr('size',1)
-      .wrap('<span />')
-      .parent()
-      .append($('<input />').css(defaults.textBoxAttrs).addClass(defaults.inputClass))
-      .append($('<button />').css(defaults.buttonAttrs).addClass(defaults.buttonClass).html(defaults.buttonText))
+      .wrap('<span />');
+
+      var $parent = $self.parent();
+
+      if(defaults.buttonDirection === 'right') {
+        $parent.append($input, $button);
+      } else {
+        $parent.append($button, $input);
+      }
+
+      $parent
       .css(defaults.parentElementAttrs)
       .mousemove(function(e) {
+         var parentOffset = $(this).offset(); 
+         var relX = e.pageX - parentOffset.left;
 
-       var parentOffset = $(this).offset(); 
-       var relX = e.pageX - parentOffset.left;
+         $self.css("left", (relX - 40));
+      });
 
-       $(that).css("left", (relX - 40));
-     });
-
-      $(that).change(function() {
-        $(that).next().val($(this).val());
+      $self.change(function() {
+        $input.val($self.val().replace(/.*fakepath(\/|\\)/, ''));
       });
 
     });
