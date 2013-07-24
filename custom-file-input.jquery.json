@@ -1,16 +1,21 @@
 {
   "name": "custom-file-input",
   "title": "Custom HTML File Input",
-  "version": "0.1.0",
-  "description": "Custom HTML File Input",
+  "version": "1.0.0",
+  "description": "A better HTML input for files, allowing custom styling and initial values.",
   "keywords": [
     "file",
     "custom",
     "input",
     "input-tag",
-    "jquery-plugin"
+    "jquery-plugin",
+    "custom-file-input",
+    "nice-file-input"
   ],
   "homepage": "https://github.com/kvt/custom-file-input",
+  "docs": "http://kvt.github.io/custom-file-input",
+  "demo": "http://kvt.github.io/custom-file-input",
+  "bugs": "https://github.com/kvt/custom-file-input/issues",
   "author": {
     "name": "Ketan Tada",
     "email": "ketantada@gmail.com",
@@ -27,13 +32,6 @@
     }
   ],
   "dependencies": {
-    "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-qunit": "~0.1.1",
-    "grunt-contrib-concat": "~0.1.2",
-    "grunt-contrib-uglify": "~0.1.1",
-    "grunt-contrib-watch": "~0.2.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-connect": "~0.3.0",
-    "jquery": "~1.9.1"
+    "jquery": ">=1.6.4"
   }
 }
