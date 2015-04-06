@@ -25,7 +25,7 @@ jQuery(function($) {
 _(Coming soon)_
 
 ## Examples
-_(Coming soon)_
+http://kvt.github.io/custom-file-input/
 
 ## Release History
 _(Nothing yet)_
